@@ -69,7 +69,7 @@ def generate(
     )
     print('kwargs', kwargs)
 
-    if pipeline_name == 'txt2img':
+    if pipeline_name == 'text2img':
         kwargs.update(width=width, height=height)
     elif pipeline_name == 'img2img' and image_input:
         kwargs.update(image=image_input)
